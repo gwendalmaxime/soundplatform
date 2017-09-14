@@ -1,0 +1,63 @@
+doctype html
+html(lang='fr')
+	head
+		title 
+		link(href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet")
+		link(rel="stylesheet" type="text/css" href="stylesheets/css/accueil_stylesheet.css")
+		meta(name="viewport" content="width=device-width", charset="UTF-8" initial-scale=1.0)
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Galdeano" rel="stylesheet")
+	body
+		#side_nav
+			h1 SAMPLE LOGO
+			#top_snav
+				// php recherche à faire
+				form(method="post" action="searchbar.php")
+					p 
+						input(type="text" name="search" id="search" placeholder="Rechercher...")
+				p Accueil
+				p Explorer
+				p Tendances
+			#user_snav
+				#user
+				h1 Jane Doe
+				p Artiste
+			#account_snav
+				p Accéder au compte
+				p Uploader une musique
+				p Déconnexion
+			#social_media
+				img(src="images/social_icons/facebook-logo.png" alt="fb")
+				img(src="images/social_icons/instagram.png" alt="instagram")
+				img(src="images/social_icons/twitter-logo-silhouette.png" alt="twitter")
+				img(src="images/social_icons/youtube.png" alt="youtube")
+			#mentions
+				p Licences 
+				p Equipe 
+				p Contact 
+				p Application 
+				p A propos 
+				p Informations légales
+
+		#content
+			#content_wrapper
+				.row
+					.col.col--4-of-12.col-m-4-of-4
+						p ÉCOUTE GRATUITE D'EXTRAITS MUSICAUX
+					.col.col--2-of-12.title.col--m-1-of-3.col--am
+						p TYPE
+							select(name="type")
+								option(value="Musique") +MUSIQUE
+								option(value="Vidéo") +VIDÉO
+					.col.col--3-of-12.title.col--m-1-of-3.col--am
+						p CLASSÉ PAR
+							select(name="classe")
+								option(value="Populaire") +POPULAIRE
+								option(value="Nos coups de coeur") +COUPS DE ❤
+					.col.col--3-of-12.title.col--m-1-of-3
+						p SÉLECTIONNER UN GENRE
+							select(name="genre")
+								option(value="Pop") +POP
+								option(value="Rock") +ROCK
+								option(value="Electro") +ELECTRO
+								option(value="Rap") +RAP

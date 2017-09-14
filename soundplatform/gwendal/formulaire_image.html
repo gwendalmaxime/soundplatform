@@ -1,0 +1,10 @@
+<form method="post" action="upload_images_post.php" enctype="multipart/form-data">
+	<label for="nom">Nom de l'image :</label> <input type="text" name="nom" id="nom" placeholder="Titre de la musique" />
+	<label>Image gratuite ou payante ?</label> <input type="radio" name="payante" id="gratuite" value="Gratuite" /><label for="gratuite"></label><br /><input type="radio" name="payante" id="payante" value="Payante" /><label for="payante"></label>
+	<!-- Le champ suivant ne doit apparaître que si la musique est payante -->
+	<label for="prix">Prix de l'image :</label> <input type="number" name="prix" id="prix" placeholder="5 euros" />
+	<label for="design">Votre musique :</label> <input type="file" name="design" id="design" />
+	<input type="hidden" name="MAX_FILE_SIZE" value="10000000000" />
+	<!-- Le champ suivant ne doit être cliquable que quand toutes les informations sont remplies -->
+	<input type="submit" value="Upload" />
+</form>

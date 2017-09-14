@@ -1,0 +1,13 @@
+<form method="post" action="upload_post.php" enctype="multipart/form-data">
+	<label for="titre">Titre de la musique :</label> <input type="text" name="titre" id="titre" placeholder="Titre de la musique" />
+	<label>Musique gratuite ou payante ?</label> <input type="radio" name="payante" id="gratuite" value="Gratuite" /><label for="gratuite"></label><br /><input type="radio" name="payante" id="payante" value="Payante" /><label for="payante"></label>
+	<!-- Le champ suivant ne doit apparaître que si la musique est payante -->
+	<label for="prix">Prix de la musique :</label> <input type="number" name="prix" id="prix" placeholder="5 euros" />
+	<label for="musique">Votre musique :</label> <input type="file" name="musique" id="musique" />
+	<input type="hidden" name="MAX_FILE_SIZE" value="10000000000" />
+	<!-- Il faut que le prochain champ n'apparaisse que si la vidéo uploadé est un fichier .mp4 -->
+	<label for="image">L'image de votre vidéo :</label> <input type="file" name="image" id="image" />
+	<input type="hidden" name="MAX_FILE_SIZE" value="100000000" />
+	<!-- Le champ suivant ne doit être cliquable que quand toutes les informations sont remplies -->
+	<input type="submit" value="Upload" />
+</form>
